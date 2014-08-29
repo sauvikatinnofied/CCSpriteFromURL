@@ -10,10 +10,10 @@
 #import "NetworkResourceDownLoader.h"
 
 @implementation CCSprite (SpriteFromURL)
-+ (id)spriteWithURL:(NSString*)imageURL defaultSprite:(NSString*)defalutImage
++ (id)spriteWithURL:(NSString*)imageURL defaultSprite:(NSString*)defaultImage
 {
     
-    CCSprite *sprite = [CCSprite spriteWithImageNamed:defalutImage];
+    CCSprite *sprite = [CCSprite spriteWithImageNamed:defaultImage];
     NetworkResourceDownLoader *downloader = [[NetworkResourceDownLoader alloc]init];
     [downloader loadPicFromURL:imageURL withCompletionBlock:^(UIImage *image) {
         CCSprite *loadedSprite = [CCSprite spriteWithCGImage:image.CGImage

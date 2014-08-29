@@ -20,5 +20,5 @@
  * Added By Sauvik Dolui, Innofied Solution Pvt. Ltd.
  */
 
-+ (id)spriteWithURL:(NSString*)imageURL defaultSprite:(NSString*)defalutImage;
++ (id)spriteWithURL:(NSString*)imageURL defaultSprite:(NSString*)defaultImage;
 @end
